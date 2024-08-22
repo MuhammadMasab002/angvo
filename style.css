@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* --------- ======== start header ======== ---------  */
+
+.header-top {
+    background: #ff5722;
+}
+.nav-branding {
+    height: 55px;
+}
+.navbar-brand {
+    margin-right: 0;
+}
+
+.navbar-btn .navbar-btn-in {
+    background: #ff5722;
+    font-size: 13px;
+    transition: all 0.3s ease-out 0s;
+    border: 1px solid #ff5722;
+    position: relative;
+}
+.navbar-btn .navbar-btn-in::before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease-out 0s;
+}
+.navbar-btn .navbar-btn-in::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    border: 2px solid #f86e03;
+    border-radius: 50%;
+    transition: all 0.4s ease-out 0s;
+}
+.navbar-btn .navbar-btn-in:hover {
+    background: #0154f7;
+    border-color: #0154f7;
+}
+.navbar-btn:hover .navbar-btn-in::before,
+.navbar-btn:hover .navbar-btn-in::after {
+    border-color: #f86e03;
+}
+
+.min-nav-btn {
+    background: #fc5546;
+}
+.min-nav-btn .fa-bars {
+    font-size: 28px;
+    color: #fff;
+}
+/* --------- ======== end header ======== ---------  */
+
+/* --------- ======== start service card ======== ---------  */
+.service-section {
+    background-image: url(images/features-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.service-text {
+    font-size: 40px;
+    color: #c4c4c4;
+}
+.service-bold-white {
+    font-size: 50px;
+    color: #fff;
+}
+.service-bold-orange {
+    font-weight: 400;
+    color: #ff5722;
+}
+.service-para {
+    color: #c3c3c3;
+
+}
+.service-card {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-out 0s;
+    background: #fff;
+}
+.service-card-logo {
+    background: #f86e03;
+    width: 70px;
+    height: 70px;
+
+}
+.service-card-logo i {
+    font-size: 35px;
+    color: #fff;
+}
+.service-card-head  {
+    height: 84px;
+}
+.service-card-btn {
+    border-radius: 10px;
+}
+.service-card-btn a {
+    color: #ff5722;
+}
+.service-card:hover {
+    background: #f86e03 !important;
+}
+.service-card:hover .service-card-logo {
+    background: #fff;
+}
+.service-card:hover .service-card-logo i {
+    color: #f86e03;
+}
+.service-card:hover .service-card-head .title {
+    color: #fff;
+}
+.service-card:hover .service-card-btn a  {
+    color: #fff;
+}
+.service-view-btn a{
+    color: #fff;
+    background: #0154f7;
+    border: 1px solid #0154f7;
+    cursor: pointer;
+    z-index: 5;
+    transition: all 0.4s ease-out 0s;
+    position: relative;
+
+}
+.service-view-btn a:hover {
+    background: #f86e03;
+    border-color: #f86e03;
+    color: #fff;
+}
+/* --------- ======== end service card ======== ---------  */
+
+/* --------- ======== start history ======== ---------  */
+.history-body {
+    margin-left: 30px;
+}
+.history-text {
+    line-height: 58px;
+}
+.history-para {
+    border-top: 1px solid #ddd;
+    color: #8a8a8a;
+    line-height: 28px;
+}
+/* --------- ======== end history ======== ---------  */
+
+/* --------- ======== start choose ======== ---------  */
+.choose-section {
+    background: #101e3b;
+    position: relative;
+    z-index: 10;
+}
+.choose-section::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(images/working-line.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+/* shapes in choose section */
+.shape {
+    position: absolute;
+}
+.shape-1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    top: 160px;
+    left: 90px;
+    animation: scale-up-three linear 15s infinite;
+}
+.shape-2 {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 80px;
+    animation: rotatey linear 15s infinite;
+}
+.shape-3 {
+    width: 60px;
+    height: 5px;
+    background: #fff;
+    border: none;
+    top: 170px;
+    right: 80px;
+    animation: rotated linear 30s infinite;
+}
+.shape-3::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 6px;
+    background: #fc5546;
+}
+.shape-4 {
+    width: 50px;
+    height: 5px;
+    background: #fc5546;
+    border: none;
+    bottom: 110px;
+    left: 80px;
+    animation: rotated linear 30s infinite;
+}
+.shape-4::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 4px;
+    background: #fff;
+}
+@keyframes scale-up-three {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(0.4);
+        background: #fc5546;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes rotatey {
+    0% {
+        transform: rotateY(-360deg) rotateX(-90deg);
+        
+    }
+    100% {
+        transform: rotateY(360deg) rotateX(90deg);
+        border-color: #fc5546;
+    }
+}
+@keyframes rotated {
+    0% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.choose-head {
+    color: #fff;
+}
+.choose-head h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.choose-head h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.choose-body-1 {
+    position: relative;
+    margin-top: 60px;
+}
+.choose-body-2 {
+    position: relative;
+    margin-top: 200px;
+}
+
+.choose-body-icon {
+    width: 120px;
+    height: 120px;
+    border: 2px dashed #fff;
+    
+}
+.choose-dot-line-1 {
+    position: absolute;
+    top: 0px;
+    right: -130px;
+    display: inline;
+}
+.choose-dot-line-2 {
+    position: absolute;
+    top: -140px;
+    right: -70px;
+    display: inline;
+}
+
+.choose-body-head h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+.choose-body-text p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+}
+/* --------- ======== end choose ======== ---------  */
+/* --------- ======== start form ======== ---------  */
+.form-body input {
+    background: #eef3f9;
+    border: 2px solid #eef3f9;
+    color: #8a8a8a;
+}
+.form-body textarea {
+    height: 130px;
+    background: #eef3f9;
+    border: 2px solid #eef3f9;
+    color: #8a8a8a;
+    resize: none;
+}
+.form-body .input-box input:focus,
+.form-body .input-box textarea:focus {
+    border-color:#f86e03;
+    background: transparent;
+    /* outline: none; */
+    box-shadow: none;
+}
+.main-btn {
+    background: #0154f7;
+    color: #fff;
+    transition: all 0.3s ease-out 0s;
+    position: relative;
+}
+.main-btn::before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease-out 0s;
+}
+.main-btn::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease-out 0s;
+}
+.main-btn:hover {
+    color: #fff;
+    background: #fc5546;
+}
+.input-box {
+    position: relative;
+}
+.input-box .fa-regular,
+.input-box .fa-solid {
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    color: #fc5546;
+    font-size: 14px;
+}
+/* --------- ======== end form ======== ---------  */
+
+/* --------- ======== start review card ======== ---------  */
+.review-section {
+    background: #eef3f9;
+}
+.review-cards {
+    background: #fff;
+    position: relative;
+}
+.review-rate i {
+    font-size: 18px;
+    color: #fc5546;
+}
+.review-text {
+    line-height: 28px;
+    color: #8a8a8a;
+}
+.review-head {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+.review-cards .fa-quote-right {
+    padding: 17px;
+    background: #f86e03;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    position: absolute;
+    bottom: -30px;
+    left: 42%;
+}
+/* --------- ======== end review card ======== ---------  */
+/* --------- ======== start footer ======== ---------  */
+.footer-section {
+    background: #041d47;
+    position: relative;
+    color: #aeb7ca;
+}
+.footer-text {
+    box-sizing: border-box;
+}
+.footer-list-item {
+    list-style: none;
+}
+.footer-list-item a {
+    width: 40px;
+    height: 40px;
+    background: #14346b;
+    color: #4a70b1;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-out 0s;
+}
+.footer-list-item a:hover {
+    background: #fc5546;
+    color: #fff;
+}
+.footer-head{
+    font-size: 20px;
+}
+.footer-nav-links ul {
+    list-style: none;
+}
+.footer-nav-links a {
+    display: inline;
+    color: #aeb7ca;
+    transition: all 0.3s ease-out 0s;
+}
+.footer-nav-links a:hover {
+    color: #f86e03;
+}
+.footer-mail input {
+    color: #8a8a8a;
+    background: #fff;
+    font-size: 14px;
+}
+.footer-mail input:focus {
+/* .footer-mail button:focus { */
+    box-shadow: none;
+    border: none;
+    z-index: 0;
+}
+.footer-mail button {
+    outline: #fc5546;
+    background: #fc5546;
+    box-shadow: none;
+}
+.fa-paper-plane {
+    font-size: 18px;
+    color: #fff;
+}
+.footer-mail button:hover .fa-paper-plane{
+    color: #fff;
+}
+.footer-icon {
+    /* padding: 17px 20px; */
+    width: 60px;
+    height: 60px;
+    background: #14346b;
+    border-radius: 50%;
+    transition: all 0.3s ease-out 0s;
+    /* transform: translateY(-50%); */
+}
+
+.footer-icon .fa-solid,
+.footer-icon .fa-regular {
+    font-size: 22px;
+    color: #3e63a4;
+    transition: all 0.3s ease-out 0s;
+}
+
+.footer-bottom:hover .footer-icon {
+    background: #fc5546;
+}
+.footer-bottom:hover .fa-solid,
+.footer-bottom:hover .fa-regular {
+    color: #fff;
+}
+.footer-contact {
+    display: inline;
+    
+}
+.footer-contact h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.footer-contact p {
+     font-size: 14px;
+}
+.footer-copy-right {
+    border-top: 2px solid #14346b;
+}
+.footer-copy-right p {
+    font-size: 15px;
+    color: #8a8a8a;
+}
+/* --------- ======== end footer ======== ---------  */
+
+/* --------- ======== start whatsapp chatbot ======== ---------  */
+.chatbot-section {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 9999;
+}
+.whatsapp {
+    background: #fc5546;
+    padding: 18px 20px 15px 20px;
+}
+.whatsapp .fa-whatsapp {
+    font-size: 36px;
+}
+/* --------- ======== end whatsapp chatbot ======== ---------  */
+
+
+/* media query start */
+@media  screen and (max-width: 1200px) {
+    .history-text {
+        font-size: 35px;
+    }
+    .history-bold-black {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .choose-body-1 {
+        margin-top: 40px;
+    }
+    .choose-body-2 {
+        margin-top: 40px;
+    }
+    .choose-dot-line-1,
+    .choose-dot-line-2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        width: 75%;
+    }
+    .choose-head h1 {
+        font-size: 35px;
+    }
+    .shape-1 {
+        top: 40px;
+        left: 50px;
+    }
+    .shape-2 {
+        bottom: 40px;
+        right: 45px;
+    }
+    .shape-3 {
+        top: 65px;
+        right: 45px;
+    }
+    .shape-4 {
+        bottom: 60px;
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        width: 60%;
+    }
+    .history-text {
+        font-size: 25px;
+    }
+}
+/* .review-item {
+    width: 33%;
+} */
